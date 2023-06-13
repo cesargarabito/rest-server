@@ -1,11 +1,11 @@
 const express = require("express");
 const cors = require("cors");
 const { dbConnection } = require("../database/config");
-
+//holi
 class Server {
   constructor() {
     this.app = express();
-    this.port = process.env.PORT;
+    this.port = process.env.PORT || 3000;
     this.usuariosPath = '/api/usuarios';
     this.authPath = '/api/auth'
     //Conectar a DB
