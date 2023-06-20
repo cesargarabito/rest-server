@@ -19,7 +19,7 @@ const usuariosGet = async (req = request, res = response) => {
 const usuariosPost = async (req = request, res = response) => {
   const { nombre, rol, correo, password } = req.body;
   const usuario = new Usuario({ nombre, rol, correo, password });
-  //Verificar si el correo existe
+  
 
   //Encriptar la contrasena
   const salt = bcryptjs.genSaltSync();
